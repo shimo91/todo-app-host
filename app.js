@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname,'/build')));
 
 
 const routerFile = require('./Routes/todo');
-app.use('/api//todo',routerFile);
+app.use('/api/todo',routerFile);
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname
